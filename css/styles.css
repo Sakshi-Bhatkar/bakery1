@@ -1,0 +1,104 @@
+
+
+.left{float: left;}
+.right{float: right;}
+.main{width: 950px; margin: auto;}
+.clear{clear: both;}
+body{margin: 0px;}
+
+/* topbar css */
+#topbar {background-color: orangered;}
+#topbar .main {text-align: right;}
+#topbar .main span{padding: 10px 0px; display: block;}
+
+/* menu bar */
+#menubar  .main .logo{width: 200px;}
+#menubar .main .logo img{width: 100%;}
+#menubar  .main .menu {margin-top: 30px;}
+#menubar  .main .menu ul {list-style: none;}
+#menubar  .main .menu ul li{display: inline-block;}
+#menubar  .main .menu ul li a{display:block; color: rgb(90, 8, 8); padding: 0px 10px; text-decoration: none; font-size: 20px;}
+#menubar  .main .menu ul li a:hover{color: rgb(230, 64, 64);}
+
+/* slider*/
+#slider{width: 100%; margin-bottom: 50px;}
+#slider img{width: 100%;}
+
+@keyframes fade{from {opacity: .4;} to {opacity: 1;}}
+
+/* on smaller screens,decrese text size */
+@media only screen and (max-width:300) 
+{.text{font-size:11px}}
+
+/* intro */
+#intro .main {text-align: center;}
+#intro .main h1{font-size: 30px; color: rgb(70, 59, 59);}
+#intro .main p{color: coral;}
+
+/* location */
+#location .main .block{width: 280px; float: left;padding: 5px; }
+#location .main h1{text-align: center; color: rgb(85, 81, 81); font-size: 30px;}
+#location .main h3{color: rgb(85, 81, 81); font-size: 20px;}
+
+/* footer */
+#footer  {background-color: coral; padding-top: 10px;}
+#footer .main .copyright span{font-size: 20px; color: white;}
+#footer .main .follow span{float: right; font-size: 20px; color:white;}
+
+/* about us */
+
+#aboutus {background-color: rgb(255, 250, 250);}
+#aboutus .main h1{font-size: 30px; color: rgb(70, 59, 59);}
+#about .main p{color: coral;}
+
+/* menu*/
+#menutop .main {box-shadow: 0px 0px 6px 2px; min-height: 2700px;}
+#menutop .main h1{ background-color: orangered; text-align: center; padding: 20px 10px; }
+#menutop .main .mainmenu{width: 570px;}
+.halfmenu .menubox ul{line-height: 30px;  display: inline-block; list-style: none;  }
+.menubox {border-bottom: double; padding: 15px;}
+.halfmenu{float: left; padding-left: 90px; text-align: justify;}
+.leftmenu-br{border-right: black double;  padding-right:80px ;}
+
+/* gallery */
+#container{background-color: #f5f5f5;}
+#container h1{text-align: center;}
+#container .main .block{width: 200px;  padding: 11px; margin: 5px;float: left; }
+#container .main .block img{ width: 100%; transition: all 0.5s ease 0s ; opacity: 0.8;}
+#container .main .block img:hover{box-shadow: 2px 2px grey; transform: scale(1.2); opacity: 1;}
+.box{background-color: #f5f5f5;}
+
+/* contact us */
+#contact{background-color: #f5f5f5; width: 100%;padding: 50px 0px; text-align: left; padding: 10px 0px;}
+#contact .main div h1 p{ float: right; text-align: center; padding: 10px 0px;}
+#container .main .block{width: 200px; float: left; padding: 10px 0px; margin: 5px;}
+#container .main .block img{width: 100%;}
+#contact .main .contact-us{width: 100%; padding: 10px; border-radius: 5px; margin: auto;}
+#contact .main .contact-us form p label span{color: brown;}
+.sub button{background-color: orangered; padding: 5px 40px; border-radius: 5px; color: white; float: right;}
+#contact .main .contact-info {width: 450px; margin: auto;}
+#contact .main .contact-info input{width: 100%; height: 25px; border-radius: 5px;}
+#contact .main .contact-info textarea{width: 100%; border-radius: 5px;}
+#contact .main .contact-info button{background-color: orangered; color: white; font-size: 15px; padding: 10px 15px; border-radius: 10px; float: right;}
+
+/* responsive */
+@media(max-width:992px){ 
+    #topbar{text-align: center; width: 100%;}
+    #topbar .main{width: 100%;}
+    #menubar .main .logoleft{float: none; text-align: center; margin: auto; } 
+    #menubar .main .menu{ float: none; text-align: center;}
+    #sliderimg{width: 100%;}
+    #intro .main{width: 100%;}
+    #location .main, #footer .main{width: 100%;}
+    }
+    
+    @media(max-width:480px){#location .main .Addblock{float: none; width: 100%;} }
+    
+    @media(max-width:480px)
+    {
+        #location .main .Addblock{float: none; width: 100%;}
+        #menubar .main .menu ul li{display: none; border: 1px solid white; background-color: orangered; padding: 1px;}
+        #menubar .main .menu ul{padding: 0px;}
+        #menubar .main .menu ul li a:hover{background-color: brown; color: #fff; width: 100%;}
+    
+    }
